@@ -1,0 +1,43 @@
+{ 
+  "games": [{
+    "homeTeamId": 0,
+    "roadTeamId": 1,
+    "date" : "",
+    "atbats": [{
+        "count": 0, 
+        "play": 4,
+        "batter": 1,
+        "inning": 1,
+        "1b": true,
+        "1bMethod": 1,
+        "2b": true,
+        "2bMethod": 1,
+        "3b": true,
+        "3bMethod": 1,
+        "h": true,
+        "hMethod": 1,
+        "out": true,
+        "outMethod": 1
+    }]
+  }],
+  "teams": [
+    {
+    "id": 0,
+    "displayName": "Team USA",
+    "abbreviation": "USA",
+    "roster": [],
+    "bkgndColor" : "#0C2340",
+    "fontColor" : "#BA0C2F"
+
+  },
+    {
+    "id": 1,
+    "displayName": "Team Japan",
+    "abbreviation": "JPN",
+    "roster": [],
+    "bkgndColor" : "#FFFFFF",
+    "fontColor" : "#1D252D"
+  }
+]
+
+}
