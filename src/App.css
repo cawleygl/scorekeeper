@@ -2,3 +2,72 @@
   text-align: center;
 }
 
+.numBox {
+  text-align: center;
+
+}
+
+.abContainer {
+  position: relative;
+}
+
+.bases {
+  position: relative;
+  width: 50%;
+  margin: 25%;
+  transform: rotate(45deg);
+  border-style: dotted;
+  border-color: black;
+  text-align: center;
+}
+.bases:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.result {
+  position: absolute;
+  padding-top: 35%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 100%;
+  opacity: 0.75;
+}
+
+.countBox {
+  position: absolute;
+  margin: 0;
+  width: 8px;
+  border-style: inset;
+  border-color: black;
+}
+.countBox:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#ball1 {
+  left: 8px;
+  top: 8px;
+}
+#ball2 {
+  left: 8px;
+  top: 16px;
+}
+#ball3 {
+  left: 8px;
+  top: 24px;
+}
+#strike1 {
+  left: 16px;
+  top: 8px;
+}
+#strike2 {
+  left: 16px;
+  top: 16px;
+}
