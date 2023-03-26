@@ -4,12 +4,13 @@
 
 .numBox {
   text-align: center;
-
 }
 
 .abContainer {
   position: relative;
 }
+
+/* Bases */
 
 .bases {
   position: relative;
@@ -18,6 +19,7 @@
   transform: rotate(45deg);
   border-style: dotted;
   border-color: black;
+  border-width: 2px; 
   text-align: center;
 }
 .bases:after {
@@ -26,8 +28,12 @@
   padding-bottom: 100%;
 }
 
+/* Results Display */
+
 .result {
   position: absolute;
+  font-size: larger;
+  font-weight: 750;
   padding-top: 35%;
   width: 100%;
   height: 100%;
@@ -35,15 +41,35 @@
   left: 0;
   text-align: center;
   line-height: 100%;
-  opacity: 0.75;
+  text-shadow: 0px 0px 2px white;
 }
+
+/* Out Display */
+
+.out {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  text-align: center;
+}
+
+/* Count Display */
 
 .countBox {
   position: absolute;
   margin: 0;
   width: 8px;
-  border-style: inset;
+  border-style: outset;
   border-color: black;
+  border-width: 2px;
+}
+.active {
+  background-color: grey;
 }
 .countBox:after {
   content: "";
@@ -52,22 +78,40 @@
 }
 
 #ball1 {
-  left: 8px;
-  top: 8px;
+  left: 4px;
+  top: 4px;
 }
 #ball2 {
-  left: 8px;
-  top: 16px;
+  left: 4px;
+  top: 12px;
 }
 #ball3 {
-  left: 8px;
-  top: 24px;
+  left: 4px;
+  top: 20px;
 }
 #strike1 {
-  left: 16px;
-  top: 8px;
+  left: 12px;
+  top: 4px;
 }
 #strike2 {
-  left: 16px;
-  top: 16px;
+  left: 12px;
+  top: 12px;
+}
+
+/* Inning Change Line */
+
+.inningChange {
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  width: 65%;
+  transform: rotate(45deg);
+  border-style: hidden solid hidden hidden;
+  border-color: black;
+  text-align: center;
+}
+.inningChange:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
