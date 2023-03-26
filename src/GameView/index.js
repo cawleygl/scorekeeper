@@ -29,6 +29,7 @@ function GameView({ gameData, homeTeam, roadTeam }) {
         <div id="ball3" className={data.ballCount >= 3 ? "countBox active" : "countBox" } />
         <div id="strike1" className={data.strikeCount >= 1 ? "countBox active" : "countBox" } />
         <div id="strike2" className={data.strikeCount >= 2 ? "countBox active" : "countBox" } />
+        
         <div className="bases" />
         <div className="result">{data.result}</div>
         {data.out ? <div className="out">{data.outNum}</div> : null}
