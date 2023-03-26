@@ -40,6 +40,7 @@ function GameView({ gameData, homeTeam, roadTeam }) {
     </tr>
   );
 
+  
   return (
     <>
       <Container fluid>
